@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+import React, { Component } from 'react';
+import {
+  Route,
+  BrowserRouter as Router,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+
+import { auth } from './services/firebase';
+
 function App() {
   return (
     <div className="App">
